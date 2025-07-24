@@ -17,14 +17,18 @@
   justify-content: space-between;
   gap: 40px; /* Space between text and image */
 }
-
+.service-welcome-image :nth-child(1){
+  
+ height: 500px;
+  
+}
 /* 3. Text Column */
 .service-welcome-text {
   flex: 1;
 }
 
 .service-welcome-title {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -41,7 +45,7 @@
 }
 
 .service-welcome-description {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.6;
   font-weight: 500;
   margin-bottom: 15px;

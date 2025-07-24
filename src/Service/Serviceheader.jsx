@@ -26,7 +26,7 @@ function Welcome() {
 
         {/* Right Column: Main Image */}
         <div className="service-welcome-image">
-          <img src={assets.briys1} alt="Zahoor Biryani Catering" />
+          <img src={assets.muttonbriyani} alt="Zahoor Biryani Catering" />
         </div>
         <img
           src={assets.briys2}

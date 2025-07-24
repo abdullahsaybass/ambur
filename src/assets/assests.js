@@ -75,6 +75,7 @@ import chickenmasala from './chicken masala.jpg'
 import chickenrice from './Chicken-fried-rice-1.jpg'
 import chickenkebab from './chickentikkakebab.jpg'
 import ambur from './ambur.png'
+import mobileheader from './mobileheader.png'
 export
  const assets = {
     SHAWARMA,
@@ -153,5 +154,6 @@ export
     chickenrice,
     chickenkebab,
     footerer,
-    ambur
+    ambur,
+    mobileheader
 }

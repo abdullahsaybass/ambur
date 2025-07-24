@@ -7,7 +7,7 @@ const services = [
     title: "WEDDING CATERING",
     description:
       "Enjoy the rich taste of authentic biryani, perfectly blended with traditional spices, for your special occasions. From delicious appetizers to exquisite desserts, we offer a complete catering experience tailored to your preferences. Our experienced chefs and dedicated team ensure a hassle-free service, allowing you to focus on celebrating with your guests.",
-    image: assets.wedding
+    image: assets.wedding,
   },
   {
     title: "BIRTHDAY PARTY CATERING",
@@ -30,7 +30,7 @@ const services = [
   {
     title: "FESTIVAL CATERING",
     description:
-      "Celebrate special festivals with a grand feast featuring traditional biryanis and festive delicacies. Whether it’s Diwali, Eid, or any cultural celebration, our catering service brings authentic flavors to your festive gatherings. We work with you to create a customized menu that complements the spirit of the occasion..",
+      "Celebrate special festivals with a grand feast featuring traditional biryanis and festive delicacies. Whether it’s Diwali, Eid, or any cultural celebration, our catering service brings authentic flavors to your festive gatherings. We work with you to create a customized menu that complements the spirit of the occasion.",
     image: assets.festivel,
   },
   {
@@ -42,7 +42,7 @@ const services = [
   {
     title: "CUSTOM EVENT CATERING",
     description:
-      "Mark your special day with a delicious menu tailored to your preferences. Our engagement catering service includes a variety of dishes prepared with high-quality ingredients, ensuring an unforgettable dining experience for you and your guests. From planning to execution, we provide seamless service to make your event stress-free.",
+      "Create your own event with a personalized menu and dedicated service. Whether it’s a baby shower, anniversary, or reunion, our custom catering options let you design a dining experience that’s just right for your celebration.",
     image: assets.custom,
   },
 ];

@@ -1,11 +1,14 @@
 .header-container {
   position: relative;
   width: 100%;
-  height: 800px; /* Adjust the height as needed */
+  min-height: 100vh; /* Ensures full screen on all devices */
   display: flex;
   flex-direction: column;
   justify-content: center;
- color: #ffffff;
+  color: #ffffff;
+  overflow: hidden;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .header-background {
@@ -17,87 +20,77 @@
   background-image: url('../assets/bri.png');
   background-size: cover;
   
+  background-repeat: no-repeat;
   z-index: -1;
 }
-.header-content-h1{
-  font-size: 250px;
+
+.header-content-h1 {
+  font-size: 200px;
   font-weight: bold;
-  color: fffefe;
-  opacity: 50%;
-   margin-left: 70px;
+  color: #fffefe;
+  opacity: 0.5;
+  margin: 0;
 }
 
 .rotating-text {
-  font-size:80px; /* Adjust the font size as needed */
+  font-size: 70px;
   font-weight: bold;
-  /* color: #cf7675; */
-  width: 80%;
-  margin-left: 70px;
   text-transform: uppercase;
-  
+  margin-top: -20px;
   z-index: 1;
 }
-.span-highlight{
+
+.span-highlight {
   color: #f5c518;
   font-size: 100px;
 }
 
+/* Responsive styles */
 @media (max-width: 1208px) {
-  .header-content-h1{
-  font-size: 150px;
-  
-  margin-left: 70px;
+  .header-content-h1 {
+    font-size: 150px;
   }
   .rotating-text {
-    font-size:50px; /* Adjust the font size as needed */
-    font-weight: bold;
-    /* color: #cf7675; */
+    font-size: 50px;
   }
-  .span-highlight{
-    color: #f5c518;
+  .span-highlight {
     font-size: 70px;
   }
 }
-@media (max-width: 880px){
-  .header-container{
-    height: 500px;
-    justify-content: flex-start;
-  }
-  .header-content-h1{
+
+@media (max-width: 880px) {
+  .header-content-h1 {
     font-size: 100px;
-    margin-left: 70px;
-    padding-top: 70px;
   }
   .rotating-text {
-    font-size:40px; /* Adjust the font size as needed */
-    font-weight: bold;
-    /* color: #cf7675; */
+    font-size: 40px;
   }
-  .span-highlight{
-    color: #f5c518;
+  .span-highlight {
     font-size: 50px;
   }
-  .header-background{
-    height: 500px;
-  }
 }
-@media (max-width: 500px){
-  .header-container{
-    height: 500px;
-    justify-content: flex-start;
+
+@media (max-width: 500px) {
+  .header-background {
+    background-image: url('../assets/mobileheader.png'); /* Use mobile-specific image */
   }
-  .header-content-h1{
-    font-size:80px;
-    margin-left: 20px
+
+  .header-container {
+    min-height: 100vh;
+    padding-top: 60px; /* Space from top */
   }
+
+  .header-content-h1 {
+    font-size: 80px;
+    margin-left: 0;
+  }
+
   .rotating-text {
-    font-size:32px;                                  
-    font-weight: bold;
-    margin-left: 20px;
-    /* color: #cf7675; */
+    font-size: 32px;
+    margin-left: 0;
   }
-  .span-highlight{
-    color: #f5c518;
+
+  .span-highlight {
     font-size: 42px;
   }
 }
