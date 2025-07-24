@@ -1,0 +1,63 @@
+/* Container for the entire section */
+.contact-section {
+    background-color: #fdfdfd;
+    padding: 50px 0;
+  }
+  
+  /* Wrapper to hold the three cards */
+  .contact-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Helps on smaller screens */
+  }
+  
+  /* Basic card styles */
+  .contact-card {
+    flex: 1;
+    min-width: 220px; /* so they don’t get too narrow */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Icon inside each card */
+  .contact-icon {
+    font-size: 36px;
+    color: #e32b2b; /* Red icon color by default */
+    margin-bottom: 15px;
+  }
+  
+  /* Title text for each card */
+  .contact-card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  /* The highlighted middle card */
+  .contact-card-highlight {
+    background-color: #e32b2b; /* Use #D4AF37 for gold if you prefer */
+    color: #fff;
+  }
+  
+  /* Make the icon and title white if card is highlighted in red */
+  .contact-card-highlight .contact-icon {
+    color: #fff;
+  }
+  
+  .contact-card-highlight .contact-card-title {
+    color: #fff;
+  }
+  

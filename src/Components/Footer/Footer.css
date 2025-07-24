@@ -1,0 +1,199 @@
+/* Entire footer container with white background and updated background properties */
+.foodking-footer {
+  width: 100%;
+  background-color: #000;
+  background-size: contain; /* Ensures the background image scales to be fully visible */
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: sans-serif;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+/* TOP SECTION: 95% width container, centered */
+.footer-top {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Allows columns to wrap when they exceed available width */
+  
+}
+
+/* Each footer column */
+.footer-col {
+  flex: 1 1 250px; /* Flexible basis with a minimum of 250px */
+  margin: 30px 20px;
+}
+
+/* Column Titles */
+.footer-col-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 60px;
+  color: #e32b2b;
+}
+
+/* BRAND COLUMN */
+.footer-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.footer-brand-name {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #f5c518;
+}
+
+.footer-brand-desc {
+  font-size: 20px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.footer-email {
+  display: inline-block;
+  color: #e32b2b;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.footer-email:hover {
+  text-decoration: underline;
+}
+
+/* QUICK LINKS */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  font-size: 24px;
+  color: #FFF;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #e32b2b;
+}
+
+/* ADDRESS COLUMN */
+.footer-address {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.footer-phone {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* SOCIAL MEDIA COLUMN */
+.footer-social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social-links li {
+  margin-bottom: 10px;
+}
+
+.footer-social-links a {
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s ease;
+}
+
+.footer-social-links a:hover {
+  color: #e32b2b;
+}
+
+.social-icon {
+  font-size: 26px;
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+  background: #000;
+  text-align: center;
+  padding: 15px 20px;
+  border-top: 1px solid #333;
+}
+
+.footer-copy {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 600;
+  color: #FFF;
+}
+
+/* Responsive Design for screens below 1024px */
+@media (max-width: 1024px) {
+  .footer-top {
+    justify-content: left;
+  }
+  
+  .footer-col {
+    flex: 1 1 45%; /* Display two columns per row */
+    text-align: left;
+  }
+}
+
+/* Responsive Design for screens below 768px */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  .footer-col {
+    width: 100%;
+    text-align: left;
+    margin: 10px 0;
+  }
+}
+
+/* Responsive Design for screens 480px and below */
+/* Show Quick Links and Address side by side */
+@media (max-width: 480px) {
+  /* Ensure brand and social remain full width */
+  .brand-col,
+  .social-col {
+    width: 100%;
+  }
+  
+  /* Display Quick Links and Address in a row */
+  .links-col,
+  .address-col {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  /* Adjust the container if needed */
+  .footer-top {
+    justify-content: left;
+  }
+}

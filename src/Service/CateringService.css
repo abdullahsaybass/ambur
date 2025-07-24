@@ -1,0 +1,83 @@
+/* CateringService.css */
+
+/* Overall section styling */
+.catering-service-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  /* Header area */
+  .catering-service-header {
+    margin-bottom: 40px;
+  }
+  
+  .catering-service-subtitle {
+    color: #e32b2b; /* Example color for "FOOD PROCESSING" */
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .catering-service-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #1f1f1f;
+  }
+  
+  /* Cards container */
+  .catering-service-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+  }
+  
+  /* Each card */
+  .catering-card {
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 10px;
+    width: 300px; /* Fixed width or use flex: 1; */
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .catering-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Highlighted center card */
+  .catering-card-highlight {
+    background-color: #ffa600; /* Example orange color */
+  }
+  
+  /* Card Image */
+  .catering-card-img {
+    width: 120px; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Card Title */
+  .catering-card-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  
+  /* Card Description */
+  .catering-card-desc {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+  }
+  

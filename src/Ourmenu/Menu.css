@@ -1,0 +1,156 @@
+/* Fooditem.css */
+
+/* Section container */
+.biryani-section {
+  background-color: #faf8f5;
+  padding: 50px 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Wrapper */
+.biryani-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header */
+.biryani-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.biryani-slogan {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e32b2b;
+  margin-bottom: 5px;
+}
+
+.biryani-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1f1f1f;
+}
+
+/* Slider slide */
+.biryani-slide {
+  padding: 0 10px;
+}
+
+/* Biryani card (used in both slider and grid) */
+.biryani-card {
+  background-color: #fff;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 20px;
+  text-align: center;
+}
+
+.biryani-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  background-color: #ffa600;
+}
+
+/* Main image */
+.biryani-main-img {
+  display: block;
+  margin: 0 auto;
+  max-height: 220px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+/* Decorative images */
+.biryani-leaf,
+.biryani-burger,
+.biryani-leaf2 {
+  position: absolute;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+.biryani-leaf {
+  top: 20px;
+  right: 10px;
+  width: 100px;
+}
+
+.biryani-burger {
+  top: 50px;
+  left: 10px;
+  width: 100px;
+}
+
+.biryani-leaf2 {
+  top: 250px;
+  left: 20px;
+  width: 100px;
+}
+
+/* Border element */
+.biryani-border {
+  width: 50px;
+  margin: 20px auto 10px auto;
+  border-bottom: 3px solid red;
+  transition: border-bottom 0.3s ease;
+  z-index: 2;
+}
+
+.biryani-card:hover .biryani-border {
+  border-bottom: 3px solid black;
+}
+
+/* Card text */
+.biryani-card-title {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1f1f1f;
+  margin-top: 10px;
+  z-index: 3;
+  transition: color 0.3s ease;
+}
+
+.biryani-card-price {
+  font-size: 24px;
+  color: #000;
+  font-weight: 600;
+  z-index: 3;
+  transition: color 0.3s ease;
+  margin: 10px 0;
+}
+
+/* Grid Layout for Desktop (when not mobile) */
+.biryani-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.grid-card {
+  flex: 1 1 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+}
+
+/* React Slick Overrides */
+.slick-dots li button:before {
+  color: #999;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #c91f37;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: transparent;
+}

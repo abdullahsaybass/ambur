@@ -1,0 +1,236 @@
+/* SECTION WRAPPER */
+.zahoor-catering-section {
+  width: 100%;
+  background: #000;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  
+}
+
+/* FLEX CONTAINER */
+.zahoor-catering-container {
+  margin: 0 auto;
+  display: flex;
+  
+  
+  flex-wrap: wrap; /* Wrap for smaller screens */
+  gap: 20px;       /* Space between image and text */
+}
+
+/* LEFT COLUMN: IMAGE WRAPPER */
+.zahoor-catering-image-wrapper {
+  position: relative; /* Needed for absolute badges */
+  flex: 1 1 00px;
+  min-width: 300px;
+  text-align: center;
+}
+
+/* Biryani Image */
+.zahoor-catering-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Price Badge (bottom-left corner) */
+.price-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  background-color: #f5c518;
+  color: #000;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Since Badge (bottom-right corner) */
+.since-badge {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  background-color: #fff;
+  color: #e32b2b;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 2px solid #e32b2b;
+  border-radius: 4px;
+  transform: rotate(-8deg);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* RIGHT COLUMN: TEXT CONTENT */
+.zahoor-catering-content {
+  flex: 1 1 500px;
+  min-width: 300px;
+  text-align: left;
+}
+
+/* Subtitle: ABOUT OUR FOOD */
+.zahoor-catering-subtitle {
+  font-size: 1rem;
+  color: #e32b2b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* Main Title */
+.zahoor-catering-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+/* Highlight a word or phrase in a different color if desired */
+.zahoor-catering-title span {
+  color: #e32b2b;
+}
+
+/* Description Paragraph */
+.zahoor-catering-description {
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Key Points Container */
+.zahoor-catering-points {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Each Point */
+.point-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #f5c518;
+  font-weight: 600;
+}
+
+.point-item p {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.4;
+}
+
+/* Call-to-Action Button */
+.zahoor-catering-btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #e32b2b;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.zahoor-catering-btn:hover {
+  background-color: #c22121;
+}
+
+/* RESPONSIVE DESIGN (Below 768px) */
+@media (max-width: 768px) {
+  .zahoor-catering-section{
+    padding: 10px 10px;
+  }
+ 
+  .zahoor-catering-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .zahoor-catering-image-wrapper,
+  .zahoor-catering-content {
+      width: 100%;
+      flex: none;
+      text-align: center;
+  }
+  
+  .price-badge {
+      left: 10px;
+  }
+  
+  .since-badge {
+      right: 10px;
+  }
+  
+  .zahoor-catering-title {
+      font-size: 2rem;
+  }
+}
+
+.zahoor-catering-section {
+  background: black;
+  padding: 50px 0;
+}
+.catering-types{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.welcome-text {
+  color: #fff;
+  font-size: 46px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.zahoor-catering-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.zahoor-catering-box {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  width: 33%;
+  min-width: 400px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.zahoor-catering-box:hover {
+  transform: translateY(-5px);
+}
+
+.catering-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.catering-title {
+  color: #b22222;
+  font-size: 30px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.catering-description {
+  font-size: 24px;
+  text-align: justify;
+  color: #444;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.zahoor-catering-box {
+  min-height: 300px; /* Adjust the height as needed */
+  padding: 30px;
+  box-sizing: border-box;
+}
