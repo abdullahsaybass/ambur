@@ -10,14 +10,17 @@ const Header = () => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % texts.length);
     }, 3000);
-
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="header-container">
-      <div className="header-background"></div>
-      {/* <h1 className="header-content-h1">ZAHOOR BRIYANI</h1> */}
+      <img
+        src={assets.bri}
+        alt="header"
+        className="header-image"
+      />
+      {/* Optional rotating text */}
       <p className="rotating-text">
         {/* Delicious <span className="span-highlight">{texts[index]}</span> – dine in or order for any function! */}
       </p>

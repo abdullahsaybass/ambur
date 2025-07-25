@@ -145,6 +145,7 @@
   .nav-container {
     width: 100%;
     margin: 0 auto;
+    justify-content: space-between;
   }
 
   .contact-btn {
@@ -163,6 +164,12 @@
 }
 
 @media (max-width: 480px) {
+  .nav-container {
+    width: 100%;
+    margin: 0 auto;
+     align-items: center;
+  }
+  
   .brand-name {
     font-size: 25px;
   }

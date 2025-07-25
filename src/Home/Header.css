@@ -1,42 +1,27 @@
 .header-container {
   position: relative;
   width: 100%;
-  min-height: 100vh; /* Ensures full screen on all devices */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #ffffff;
   overflow: hidden;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-.header-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../assets/bri.png');
-  background-size: cover;
-  
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-.header-content-h1 {
-  font-size: 200px;
-  font-weight: bold;
-  color: #fffefe;
-  opacity: 0.5;
+  padding: 0;
   margin: 0;
 }
 
+.header-image {
+  width: 100%;
+  height: auto; /* Let height adjust naturally */
+  display: block;
+}
+
+
 .rotating-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
   font-size: 70px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: -20px;
   z-index: 1;
 }
 
@@ -45,52 +30,23 @@
   font-size: 100px;
 }
 
-/* Responsive styles */
-@media (max-width: 1208px) {
-  .header-content-h1 {
-    font-size: 150px;
-  }
-  .rotating-text {
-    font-size: 50px;
-  }
-  .span-highlight {
-    font-size: 70px;
-  }
-}
-
+/* Shrink text for smaller screens */
 @media (max-width: 880px) {
-  .header-content-h1 {
-    font-size: 100px;
-  }
   .rotating-text {
     font-size: 40px;
   }
+
   .span-highlight {
     font-size: 50px;
   }
 }
 
 @media (max-width: 500px) {
-  .header-background {
-    background-image: url('../assets/mobileheader.png'); /* Use mobile-specific image */
-  }
-
-  .header-container {
-    min-height: 100vh;
-    padding-top: 60px; /* Space from top */
-  }
-
-  .header-content-h1 {
-    font-size: 80px;
-    margin-left: 0;
-  }
-
   .rotating-text {
-    font-size: 32px;
-    margin-left: 0;
+    font-size: 30px;
   }
 
   .span-highlight {
-    font-size: 42px;
+    font-size: 40px;
   }
 }
