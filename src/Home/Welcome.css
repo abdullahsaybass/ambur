@@ -1,67 +1,69 @@
-/* 1. Main Section Styling */
-.welcome-section {
- 
-  position: relative; /* Allows for absolutely positioned elements if needed */
+/* 1. Section Background */
+.intro-section {
+  position: relative;
   padding: 50px 0;
-  background-color: #a21115; /* Bold red/pink background */
-  color: #fff; /* White text on red background */
-  overflow: hidden; /* Hide overflowing shapes if you add them */
+  background-color: #a21115;
+  color: #fff;
+  overflow: hidden;
 }
 
-/* 2. Container to Center Content */
-.welcome-container {
- width: 80%;
+/* 2. Container Flexbox */
+.intro-container {
+  width: 80%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 40px; /* Space between text and image */
+  gap: 40px;
 }
 
-/* 3. Text Column */
-.welcome-text {
+/* 3. Image Column - LEFT */
+.intro-image {
+  flex: 1;
+  text-align: left;
+}
+
+.intro-image img {
+  width: 100%;
+  max-width: 600px;
+  height: 700px;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* 4. Text Column - RIGHT */
+.intro-text {
   flex: 1;
 }
 
-.welcome-title {
+.intro-title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-.welcome-subtitle {
+.intro-subtitle {
   display: inline-block;
   font-size: 1rem;
   font-weight: 600;
-  background-color: #fcb900; /* Golden/yellow highlight */
+  background-color: #fcb900;
   color: #000;
   padding: 6px 12px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-.welcome-descriptiond {
+.intro-description {
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 15px;
   font-weight: 500;
   text-transform: lowercase;
-  
 }
-.shutter-image-2{
-  position: absolute;
-  width: 250px;
-  top:-40px;
-  left: 290px;
-}
-.shutter-image-1{
-  position: absolute;
-  width: 250px;
-  bottom: -40px;
-  left: 200px;
-}
-/* 4. Button */
-.welcome-btn {
+
+/* 5. Button */
+.intro-btn {
   display: inline-block;
   background-color: transparent;
   color: #fff;
@@ -73,37 +75,21 @@
   transition: background-color 0.3s ease;
 }
 
-.welcome-btn:hover {
+.intro-btn:hover {
   background-color: #fff;
   color: #c91f37;
 }
 
-/* 5. Image Column */
-.welcome-image {
-  flex: 1;
-  text-align: right;
-}
-
-.welcome-image img {
-  width: 100%;
-  max-width: 600px;
-  height: 700px;
-  border: 4px solid #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  object-fit: cover;
-}
-
-/* 6. Responsive Adjustments */
+/* 6. Responsive */
 @media (max-width: 768px) {
-  .welcome-container {
+  .intro-container {
     flex-direction: column;
-   
   }
-  .welcome-image {
+  .intro-image {
     text-align: center;
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
-  .welcome-description {
+  .intro-description {
     font-size: 16px;
   }
 }
